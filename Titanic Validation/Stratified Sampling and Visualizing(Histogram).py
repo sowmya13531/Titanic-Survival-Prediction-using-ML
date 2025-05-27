@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+# Normalize column names to lowercase for safety
+strat_train_set.columns = strat_train_set.columns.str.lower()
+strat_test_set.columns = strat_test_set.columns.str.lower()
+# Plot histograms
+plt.figure(figsize=(12, 5))
+plt.subplot(1, 2, 1)
+plt.hist(strat_train_set['survived'], alpha=0.6, label='Survived')
+plt.hist(strat_train_set['pclass'], alpha=0.6, label='Pclass')
+plt.title('Training Set')
+plt.xlabel('Value')
+plt.ylabel('Count')
+plt.legend()
+plt.subplot(1, 2, 2)
+plt.hist(strat_test_set['survived'], alpha=0.6, label='Survived')
+plt.hist(strat_test_set['pclass'], alpha=0.6, label='Pclass')
+plt.title('Test Set')
+plt.xlabel('Value')
+plt.ylabel('Count')
+plt.legend()
+plt.tight_layout()
+plt.show()
