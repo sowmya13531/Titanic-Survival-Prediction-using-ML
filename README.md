@@ -1,10 +1,10 @@
-# Titanic-Survival-Prediction-using-ML
+# 🚢Titanic-Survival-Prediction-using-ML
 
 This project applies machine learning to predict whether a passenger survived the Titanic disaster using the classic Titanic dataset.
 
 ## Overview
 
-- **Dataset:** [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic)
+- **Dataset:** [Kaggle Titanic Dataset]
 - **Goal:** Binary classification – Survived (1) or Not Survived (0)
 - **Model Used:** Random Forest Classifier
 - **Accuracy:** ~79%
